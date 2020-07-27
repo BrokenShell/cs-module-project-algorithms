@@ -1,5 +1,6 @@
 import unittest
-from moving_zeroes import moving_zeroes
+from .moving_zeroes import moving_zeroes
+
 
 class Test(unittest.TestCase):
     def test_moving_zeroes_return_value_1(self):

@@ -1,16 +1,17 @@
-#!/usr/bin/python
+from itertools import combinations_with_replacement, permutations
 
-import sys
 
 def rock_paper_scissors(n):
-  # Your code here
-
-  pass
-
-
-if __name__ == "__main__":
-  if len(sys.argv) > 1:
-    num_plays = int(sys.argv[1])
-    print(rock_paper_scissors(num_plays))
-  else:
-    print('Usage: rps.py [num_plays]')
+    group = ['rock', 'paper', 'scissors']
+    if n == 0:
+        return [[]]
+    else:
+        combos = combinations_with_replacement(group, n)
+        result = set()
+        for arr in combos:
+            for itm in permutations(arr, n):
+                result.add(itm)
+        result = list(map(list, result))
+        for i in range(n, 0, -1):
+            result.sort(key=lambda x: group.index(x[i - 1]))
+        return result
