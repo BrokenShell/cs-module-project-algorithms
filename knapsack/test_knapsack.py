@@ -1,4 +1,3 @@
-import sys
 import unittest
 from collections import namedtuple
 from .knapsack import knapsack_solver
