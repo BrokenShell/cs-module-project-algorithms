@@ -1,3 +1,4 @@
+""" Stretch Goal """
 from itertools import combinations_with_replacement, permutations
 
 

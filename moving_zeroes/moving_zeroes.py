@@ -1,6 +1,6 @@
 """
-Input: a List of integers
-Returns: a List of integers
+Input: a List of numbers
+Returns: a List of numbers
 """
 
 
@@ -9,6 +9,5 @@ def moving_zeroes(arr):
 
 
 if __name__ == '__main__':
-    # Use the main function here to test out your implementation
     some_list = [0, 3, 1, 0, -2]
     print(f"The resulting of moving_zeroes is: {moving_zeroes(some_list)}")

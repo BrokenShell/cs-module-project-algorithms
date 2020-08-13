@@ -1,3 +1,4 @@
+""" Stretch Goal """
 from collections import namedtuple
 
 Item = namedtuple('Item', ['index', 'size', 'value'])

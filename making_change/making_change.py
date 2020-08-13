@@ -1,3 +1,4 @@
+""" Stretch Goal """
 import sys
 
 
